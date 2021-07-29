@@ -23,7 +23,7 @@ class MyAppBar extends StatelessWidget {
           padding: const EdgeInsets.all(10.0),
           child: TextField(
             decoration: InputDecoration(
-                hintText: 'Search',
+                hintText: 'Search Food...',
                 prefixIcon: Icon(Icons.search),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(3),

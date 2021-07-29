@@ -3,6 +3,8 @@ import 'package:ahan/homes/about_us_screen.dart';
 import 'package:ahan/homes/home_screen.dart';
 import 'package:ahan/homes/login_screen.dart';
 import 'package:ahan/homes/main_screen.dart';
+import 'package:ahan/homes/my_bills.dart';
+import 'package:ahan/homes/my_order.dart';
 import 'package:ahan/homes/order_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -31,13 +33,15 @@ class MyApp extends StatelessWidget {
                 primarySwatch: Colors.orange,
               ),
               debugShowCheckedModeBanner: false,
-              home: LoginScreen(),
+              home: HomeScreen(),
               routes: {
                 HomeScreen.id: (context) => HomeScreen(),
                 OrderScreen.id: (context) => OrderScreen(),
                 AboutUsScreen.id: (context) => AboutUsScreen(),
                 MainScreen.id: (context) => MainScreen(),
                 LoginScreen.id: (context) => LoginScreen(),
+                MyBills.id: (context) => MyBills(),
+                MyOrderScreen.id: (context) => MyOrderScreen(),
               },
             );
           }
